@@ -1,33 +1,31 @@
 #include <iostream>
+
 using namespace std;
 
 int main() {
-    int n, original, invertido = 0, digito;
 
-    cout << "Ingrese un numero (1 <= n <= 1000000000): ";
+    long long n;
+    cout<<"Ingrese un numero para comprobar si es capicúa";
     cin >> n;
-
-    // Validamos el rango
-    if (n < 1 || n > 1000000000) {
-        cout << "Numero fuera de rango" << endl;
-        return 0;
-    }
-
-    original = n;   // guardamos el numero original
-
-    // Vamos sacando los digitos y armando el numero al reves
+  if (n < 1 || n > 1e9) {
+  cout << "Fuera de rango" <<endl;
+ return 0;
+  }
+      long long original = n;
+    long long invertido = 0;
+    
     while (n > 0) {
-        digito = n % 10;
+        long long digito = n % 10; 
         invertido = invertido * 10 + digito;
-        n = n / 10;
-    }
+        n /= 10;
+    } 
 
-    // Comparamos el original con el invertido
     if (original == invertido) {
-        cout << "El numero es capicua" << endl;
+        cout << "Es capicua" << endl; 
     } else {
-        cout << "El numero no es capicua" << endl;
+        cout << "No es capicua" << endl; 
     }
 
     return 0;
 }
+
