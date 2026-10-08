@@ -2,24 +2,24 @@
 using namespace std;
 
 int main() {
-    int secreto = 42;   // El numero secreto
+    int secreto = 42;   
     int intento;
-    int contador = 0;   // Para contar los intentos
+    int contador = 0;   
 
-    // Usamos do-while para pedir al menos un intento siempre
+    
     do {
         cout << "Intento: ";
         cin >> intento;
-        contador++;     // Sumamos 1 al contador cada vez que intenta
+        contador++;     
 
         if (intento < secreto) {
-            cout << "Mayor" << endl;   // Si el intento es menor, el secreto es mayor
+            cout << "Mayor" << endl;   
         } 
         else if (intento > secreto) {
-            cout << "Menor" << endl;   // Si el intento es mayor, el secreto es menor
+            cout << "Menor" << endl;   
         }
 
-    } while (intento != secreto);      // El ciclo se repite hasta acertar
+    } while (intento != secreto);      
 
     // Cuando sale del ciclo, es porque acerto
     cout << "¡Correcto! Lo lograste en " << contador << " intentos." << endl;
