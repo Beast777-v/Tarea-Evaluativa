@@ -12,7 +12,7 @@ int main(){
 
     if (n<=0){
 
-        cout << "Eres tonto o no sabes leer?";
+        cout << "Fuera de rango";
         return 1;
 
     }
