@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    int secreto = 42;   
+    int secreto = 50;   
     int intento;
     int contador = 0;   
 
